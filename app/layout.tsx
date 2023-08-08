@@ -1,8 +1,12 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter, Poppins, Roboto } from "next/font/google";
+import Navbar from "./components/Navbar";
+
+import "./globals.css";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+export const inter = Inter({ subsets: ["latin"] });
+export const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Mbunity Development",
@@ -16,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={`bg bg-neutral-100 ${poppins.className}`}>
+        <div>
+          <Navbar />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
