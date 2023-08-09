@@ -33,7 +33,7 @@ const ContactInfo = () => {
   }, [isDesktop]);
 
   return (
-    <div className="bg-black text-white flex flex-col items-center md:items-start px-10 pt-10 pb-4 md:pb-8 rounded-lg relative overflow-hidden">
+    <div className="bg-black text-white flex flex-col items-center md:items-start px-10 pt-10 pb-4 md:pb-8 rounded-lg relative overflow-hidden w-full md:max-w-[496px]">
       <h3 className="text-2xl font-semibold">Contact information</h3>
       <p className="text-lg text-gray-100 mb-3 md:mb-20">
         Say something to start a live chat
