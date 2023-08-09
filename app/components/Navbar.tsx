@@ -14,7 +14,6 @@ import { inter, roboto } from "../layout";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  console.log(pathname);
 
   const handleClick = () => {
     setIsOpen((prevState) => !prevState);
@@ -56,7 +55,7 @@ const Navbar = () => {
         >
           {routes.map((route) => (
             <li
-              className={`mx-0 mb-7 md:my-0 md:mx-4 hover:font-bold transition-all text-sm md:text-base ${
+              className={`mx-0 mb-7 md:my-0 md:mx-4 hover:font-bold transition-all text-sm md:text-base duration-300 ${
                 roboto.className
               } ${route.url === pathname && "font-bold"}`}
               key={route.label}
