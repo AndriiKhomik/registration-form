@@ -8,11 +8,6 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 export const inter = Inter({ subsets: ["latin"] });
 export const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
-export const metadata = {
-  title: "Mbunity Development",
-  description: "Assessment Test",
-};
-
 export default function RootLayout({
   children,
 }: {
