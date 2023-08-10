@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter, Poppins, Roboto } from "next/font/google";
 import Navbar from "./components/Navbar";
 
@@ -9,7 +8,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 export const inter = Inter({ subsets: ["latin"] });
 export const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Mbunity Development",
   description: "Assessment Test",
 };
