@@ -37,7 +37,7 @@ const Navbar = () => {
               isOpen ? "text-white" : "text-black"
             }`}
           >
-            Logo Here
+            <Link href="/">Logo Here</Link>
           </span>
           <span
             className={`text-3xl cursor-pointer mx-2 md:hidden block ${
