@@ -72,13 +72,19 @@ const ContactInfo = () => {
       </address>
       <div className="flex justify-center items-center">
         <div className="rounded-full bg-neutral-800 h-8 w-8 flex items-center justify-center text-lg hover:bg-white hover:text-black mr-6 transition-all duration-300">
-          <FaTwitter />
+          <a href="https://twitter.com/" target="_blank">
+            <FaTwitter />
+          </a>
         </div>
         <div className="rounded-full bg-neutral-800 h-8 w-8 flex items-center justify-center text-lg hover:bg-white hover:text-black mr-6 transition-all duration-300">
-          <AiOutlineInstagram />
+          <a href="https://www.instagram.com/" target="_blank">
+            <AiOutlineInstagram />
+          </a>
         </div>
         <div className="rounded-full bg-neutral-800 h-8 w-8 flex items-center justify-center text-lg hover:bg-white hover:text-black mr-6 transition-all duration-300">
-          <BsDiscord />
+          <a href="https://discord.com/" target="_blank">
+            <BsDiscord />
+          </a>
         </div>
       </div>
       <div

@@ -3,8 +3,9 @@ import { Inter, Poppins, Roboto } from "next/font/google";
 import Navbar from "./components/Navbar";
 
 import "./globals.css";
+import Footer from "./components/Footer";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"] });
 export const inter = Inter({ subsets: ["latin"] });
 export const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Navbar />
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   );

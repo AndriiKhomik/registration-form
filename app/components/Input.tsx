@@ -10,6 +10,7 @@ interface InputProps {
   errors: FieldErrors;
   disabled?: boolean;
   placeholder?: string;
+  classNames?: string;
 }
 
 const Input: FC<InputProps> = ({
@@ -20,9 +21,10 @@ const Input: FC<InputProps> = ({
   required,
   type = "text",
   placeholder,
+  classNames = "",
 }) => {
   return (
-    <div>
+    <div className="w-full">
       <label
         htmlFor={id}
         className="block text-sm font-medium leading-6 text-gray-500 mt-4"
@@ -37,7 +39,7 @@ const Input: FC<InputProps> = ({
           disabled={disabled}
           placeholder={placeholder}
           {...register(id, { required })}
-          className="form-input
+          className={`form-input
           block 
           w-full
           border-0
@@ -53,7 +55,7 @@ const Input: FC<InputProps> = ({
           focus:ring-transparent
           focus:border-black
           sm:text-sm
-          sm:leading-6"
+          sm:leading-6 ${classNames}`}
         />
       </div>
     </div>

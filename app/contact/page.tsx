@@ -6,7 +6,7 @@ import ContactInfo from "./ContactInfo";
 export default function Contact() {
   return (
     <Container>
-      <div className="flex flex-col md:flex-row bg-white rounded-lg p-2">
+      <div className="flex flex-col md:flex-row bg-white rounded-lg p-2 mb-12 md:mb-0">
         <ClientOnly>
           <ContactInfo />
           <ContactForm />
